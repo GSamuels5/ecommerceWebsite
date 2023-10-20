@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-image: url("../images/background.jpg");
+background-size: cover;
+background-color: rgb(135, 285, 165);
+justify-content: center;
+size: 20%;
+
+}
+.container{
+    width: 300px;
+    height: 150px;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    margin:  auto;
+    position: relative;
+    border: 1px solid;
+ transition: transform 1200ms;
+}
+:is(.front, .back, img[alt="Profile"] ) {
+    width: 100%;
+    height: 100%;
+
+}
+#naves{
+    
+    justify-content: end;
+    text-wrap: wrap;
+
+    
+}
+ul li{
+    display: flex;
+    align-items: end;
+    padding: 4px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 25px;
+}
+
+.front, .back {
+    position: absolute;
+     width: 100%;
+    height: 100%; 
+}
+
+.container:hover > .navbar{
+    transform: rotateY(180deg)
+    ;
+    cursor: pointer;
+}
+.back {
+    transform: rotateY(180deg);
+
+}
+.front {
+    background-image: url("./images/logo.png");
+}
+footer{
+    padding: 80% 0 0 0;
+}
