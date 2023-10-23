@@ -52,7 +52,7 @@ font-size: 25px;
     height: 100%; 
 }
 
-.container:hover > .navbar{
+.container:hover .navbar{
     transform: rotateY(180deg)
     ;
     cursor: pointer;
@@ -67,3 +67,25 @@ font-size: 25px;
 footer{
     padding: 80% 0 0 0;
 }
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.card :hover{
+    border: 2 px red;
+}
+.container .card {
+    border: 4px blanchedalmond;
+    width: 30rem;
+}
+.container .card img {
+    width: 20rem;
+    aspect-ratio: 1/1;}
+
+    @media screen and (width < 900px) {
+        .container {
+            flex-flow: column wrap;
+        }
+    } 
