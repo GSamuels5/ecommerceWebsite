@@ -9,10 +9,24 @@ body{
 background-image: url("../images/background.jpg");
 background-size: cover;
 background-color: rgb(135, 285, 165);
+background: -o-linear-gradient(rgb) 145 380 560;
 justify-content: center;
 size: 20%;
 
 }
+
+h1{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#about p{
+    border: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+}
+
 .container{
     width: 300px;
     height: 150px;
@@ -44,6 +58,9 @@ ul li{
     padding: 4px ;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-size: 25px;
+box-sizing: border-box;
+border: 2px;
+box-shadow: inset;
 }
 
 .front, .back {
@@ -62,7 +79,7 @@ font-size: 25px;
 
 }
 .front {
-    background-image: url("./images/logo.png");
+    background-image: url("../images/logo.png");
 }
 footer{
     padding: 80% 0 0 0;
@@ -83,6 +100,11 @@ footer{
 .container .card img {
     width: 20rem;
     aspect-ratio: 1/1;}
+
+.container{
+    height: 10px;
+}
+    
 
     @media screen and (width < 900px) {
         .container {
