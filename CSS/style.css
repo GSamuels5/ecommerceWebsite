@@ -8,9 +8,9 @@
 body{
 background-image: url("../images/background.jpg");
 background-size: cover;
-background-color: rgb(135, 285, 165);
 background: -o-linear-gradient(rgb) 145 380 560;
-justify-content: center;
+align-content: flex-end;
+justify-content: space-between;
 size: 20%;
 
 }
@@ -21,7 +21,7 @@ h1{
     text-decoration: underline;
 }
 #about p{
-    border: 1rem;
+    border: 4rem;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: 15px;
@@ -29,7 +29,7 @@ h1{
 
 .container{
     width: 300px;
-    height: 150px;
+    height: 250px;
 }
 .navbar{
     width: 100%;
@@ -40,28 +40,7 @@ h1{
     border: 1px solid;
  transition: transform 1200ms;
 }
-:is(.front, .back, img[alt="Profile"] ) {
-    width: 100%;
-    height: 100%;
 
-}
-#naves{
-    
-    justify-content: end;
-    text-wrap: wrap;
-
-    
-}
-ul li{
-    display: flex;
-    align-items: end;
-    padding: 4px ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: 25px;
-box-sizing: border-box;
-border: 2px;
-box-shadow: inset;
-}
 
 .front, .back {
     position: absolute;
@@ -79,7 +58,32 @@ box-shadow: inset;
 
 }
 .front {
-    background-image: url("../images/logo.png");
+    background-image: ("../images/logo.png"/300x250)
+    ;
+
+}
+:is(.front, .back, img[alt="logo"] ) {
+    width: 100%;
+    height: 100%;
+
+}
+#naves{
+    
+    justify-content: end;
+    text-wrap: wrap;
+
+    
+}
+
+ul li{
+    display: flex;
+    align-items: end;
+    padding: 4px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 25px;
+box-sizing: border-box;
+border: 2px;
+box-shadow: inset;
 }
 footer{
     padding: 80% 0 0 0;
